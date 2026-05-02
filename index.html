@@ -161,7 +161,7 @@
                     <p>24×7 availability for urgent medical care, accidental trauma, and critical health situations requiring immediate attention.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-stomach"></i></div>
+                    <div class="service-icon"><i class="fas fa-bacteria"></i></div>
                     <h3>Digestive Care</h3>
                     <p>Effective treatment for diarrhea, abdominal pain, food poisoning, and various gastrointestinal issues.</p>
                 </div>
@@ -402,7 +402,9 @@
         const animateCount = (counter) => {
             const target = parseFloat(counter.getAttribute('data-target'));
             let count = 0;
-            const increment = target / 50;
+            const increment = target / 40;
+            
+            counter.innerText = "0"; // Reset before animation
 
             const update = () => {
                 count += increment;
@@ -421,7 +423,6 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     animateCount(entry.target);
-                    observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.5 });
