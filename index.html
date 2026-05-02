@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rao Hospital - A trusted, 24x7 healthcare facility in Shuklaganj, Unnao. Led by Dr. Daya Shankar Rao, providing expert general medicine, emergency care, and inpatient services.">
+    <title>Rao Hospital | Trusted Healthcare in Shuklaganj</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="fas fa-hospital-user"></i></div>
+                    <div class="logo-text">
+                        <h1>Rao Hospital</h1>
+                        <span>Care You Can Trust</span>
+                    </div>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#" class="active">Home</a>
+                    <a href="#about">About Us</a>
+                    <div class="dropdown">
+                        <a href="#services" class="dropbtn">Services <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 3px;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#services">General Medicine</a>
+                            <a href="#services">Emergency Care</a>
+                            <a href="#services">Dental Services</a>
+                            <a href="#services">Inpatient Care</a>
+                        </div>
+                    </div>
+                    <a href="#facility">Facilities</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="header-actions">
+                    <a href="tel:+918400071133" class="icon-btn call-icon-btn" title="Call Now">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="#" onclick="openModal(); return false;" class="cta-button"><i class="fas fa-user-md"></i> Consult Now</a>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <span class="badge">Shuklaganj's Trusted Medical Center</span>
+            <h2>Professional Healthcare,<br>When You Need It Most.</h2>
+            <p>Providing reliable general medicine, emergency trauma care, and inpatient services to the community of Shuklaganj and Unnao. Your health is our priority.</p>
+            <div class="hero-buttons">
+                <a href="tel:+918400071133" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="https://wa.me/918400071133" target="_blank" class="btn-primary wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="#services" class="btn-outline">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <div class="container">
+        <div class="trust-banner">
+            <div class="trust-stats">
+                <div class="stat-item">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </div>
+                    <h3><span class="count" data-target="3.8">0</span> / 5 Rating</h3>
+                    <p>From <span class="count" data-target="40">0</span>+ Patient Reviews</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>MD Physician</h3>
+                    <p>Expert Internal Medicine</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>24×7 Emergency</h3>
+                    <p>Always Ready to Help</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-bed"></i>
+                    <h3><span class="count" data-target="20">0</span>+ Beds</h3>
+                    <p>Inpatient Facility</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About & Doctor Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="assets/rao.png" alt="Rao Hospital Specialist Care">
+                </div>
+                <div class="about-content">
+                    <span class="section-badge">Medical Leadership</span>
+                    <h2>Expert Care Rooted in Experience & Empathy</h2>
+                    <p>At Rao Hospital, we believe in patient-focused healthcare. Our facility is designed to offer accessible, reliable, and high-quality medical services to the local community, ensuring that everyone receives the attention they deserve in times of illness.</p>
+                    <p>Our staff is recognized for polite behavior, deep treatment knowledge, and a commitment to your speedy recovery.</p>
+                    
+                    <div class="team-grid" style="margin-top: 35px; gap: 20px;">
+                        <div class="team-card">
+                            <div class="team-img" style="height: 160px;">
+                                <div class="placeholder-img"><i class="fas fa-stethoscope"></i></div>
+                            </div>
+                            <div class="team-info" style="padding: 20px;">
+                                <h3 style="font-size: 1.2rem;">Dr. Daya Shankar Rao</h3>
+                                <span class="team-qualification" style="font-size: 0.85rem;">MBBS, MD – Internal Medicine</span>
+                                <span class="team-role" style="font-size: 0.85rem;">Consultant Physician</span>
+                                <p style="font-size: 0.85rem; margin-bottom: 0;">Specialist in managing complex medical conditions, acute illnesses, and comprehensive patient care.</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="team-img" style="height: 160px; background-color: #ebf5fb;">
+                                <div class="placeholder-img" style="color: #3498db;"><i class="fas fa-tooth"></i></div>
+                            </div>
+                            <div class="team-info" style="padding: 20px;">
+                                <h3 style="font-size: 1.2rem;">Dr. Archana Rao</h3>
+                                <span class="team-qualification" style="font-size: 0.85rem; color: #3498db;">BDS, MDS</span>
+                                <span class="team-role" style="font-size: 0.85rem;">Dental Specialist</span>
+                                <p style="font-size: 0.85rem; margin-bottom: 0;">Providing expert root canal treatments, extractions, and routine dental procedures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Specialities</span>
+                <h2>Comprehensive Healthcare Services</h2>
+                <p>From routine checkups to emergency trauma care, our hospital is equipped to handle a wide range of medical needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-virus"></i></div>
+                    <h3>General Medicine</h3>
+                    <p>Expert diagnosis and treatment for fever, infections, weakness, and other routine illnesses affecting your daily life.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>Chronic Care</h3>
+                    <p>Ongoing management and care plans for blood pressure, diabetes, and various lifestyle-related diseases.</p>
+                </div>
+                <div class="service-card" style="border-color: #e74c3c;">
+                    <div class="service-icon" style="color: #e74c3c;"><i class="fas fa-ambulance"></i></div>
+                    <h3>Emergency & Trauma</h3>
+                    <p>24×7 availability for urgent medical care, accidental trauma, and critical health situations requiring immediate attention.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-stomach"></i></div>
+                    <h3>Digestive Care</h3>
+                    <p>Effective treatment for diarrhea, abdominal pain, food poisoning, and various gastrointestinal issues.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                    <h3>Dental Services</h3>
+                    <p>Advanced root canal treatments and essential basic dental care provided by an experienced MDS specialist.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-procedures"></i></div>
+                    <h3>Inpatient Services</h3>
+                    <p>Comfortable admission facilities with continuous medical observation for patients needing prolonged care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Section -->
+    <section class="facility" id="facility">
+        <div class="container">
+            <div class="facility-grid">
+                <div class="facility-content">
+                    <h2>Advanced Inpatient Care & Monitoring</h2>
+                    <p>Our physical infrastructure is designed to prioritize patient safety and comfort. We maintain a hygienic environment with the necessary equipment to support recovery.</p>
+                    
+                    <div class="facility-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                            <div>
+                                <h4>20+ Bed Capacity</h4>
+                                <p>Spacious and clean wards for comfortable patient recovery.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+                            <div>
+                                <h4>Continuous Monitoring</h4>
+                                <p>Essential medical equipment to track patient vitals round-the-clock.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-user-nurse"></i></div>
+                            <div>
+                                <h4>Dedicated Nursing Staff</h4>
+                                <p>Attentive care from trained professionals available day and night.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="facility-img">
+                    <img src="assets/hospital_ward_1777718223711.png" alt="Inpatient Facility at Rao Hospital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3><i class="fas fa-hospital-user"></i> Rao Hospital</h3>
+                    <p>A community-trusted hospital delivering general medicine, emergency care, and basic inpatient services with consistent availability and personalized care in Shuklaganj.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Hospital</a></li>
+                        <li><a href="#services">Medical Services</a></li>
+                        <li><a href="#facility">Our Facilities</a></li>
+                        <li><a href="#">Patient Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" style="margin-top: 6px;"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <a href="https://www.google.com/maps?q=Rao+Hospital+Shuklaganj+Gangaghat+Unnao" target="_blank" class="location-link">
+                                Shuklaganj, Gangaghat,<br>Unnao, Uttar Pradesh
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Call for Appointments</strong>
+                            <a href="tel:+918400071133" class="call-now-btn-footer"><i class="fas fa-phone-alt"></i> +91 8400071133</a><br>
+                            <span style="color: #e74c3c; font-size: 0.9em; margin-top: 5px; display: block;">(24x7 Emergency Line)</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Timings</strong>
+                            Open 24 Hours, 7 Days a week.<br>Walk-ins welcome.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rao Hospital, Shuklaganj. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consult Now Modal -->
+    <div id="consultModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Book a Consultation</h2>
+            <form id="consultForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="patientName">Patient Name *</label>
+                    <input type="text" id="patientName" required placeholder="Enter full name">
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number *</label>
+                    <input type="tel" id="mobileNumber" required placeholder="e.g. 9876543210">
+                </div>
+                <div class="form-group">
+                    <label for="visitReason">Reason for Visit *</label>
+                    <select id="visitReason" required>
+                        <option value="" disabled selected>Select a reason...</option>
+                        <option value="Fever">Fever</option>
+                        <option value="General Checkup">General Checkup</option>
+                        <option value="Emergency">Emergency</option>
+                        <option value="Digestive Issue">Digestive Issue</option>
+                        <option value="BP/Diabetes">BP/Diabetes</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="optionalMessage">Optional Message</label>
+                    <textarea id="optionalMessage" rows="3" placeholder="Briefly describe any symptoms or queries..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; background-color: #25D366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);">
+                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918400071133" target="_blank" class="floating-wa">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active-menu');
+        }
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Active link management and explicit smooth scroll
+        const navLinksArr = document.querySelectorAll('.nav-links > a, .dropdown-content > a');
+        navLinksArr.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Prevent default anchor click behavior
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        const yOffset = -85; // Sticky header offset
+                        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                }
+
+                // Highlight active link (only for main top-level nav links)
+                if (this.parentElement.classList.contains('nav-links')) {
+                    document.querySelectorAll('.nav-links > a').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                }
+                
+                // Close mobile menu if open
+                const navLinksContainer = document.getElementById('navLinks');
+                if (navLinksContainer.classList.contains('active-menu')) {
+                    navLinksContainer.classList.remove('active-menu');
+                }
+            });
+        });
+
+        function openModal() {
+            document.getElementById('consultModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('consultModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('consultModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('patientName').value;
+            const phone = document.getElementById('mobileNumber').value;
+            const reason = document.getElementById('visitReason').value;
+            const message = document.getElementById('optionalMessage').value;
+
+            const text = `Hello, I want to consult.\nName: ${name}\nPhone: ${phone}\nReason: ${reason}\nMessage: ${message ? message : 'N/A'}`;
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/918400071133?text=${encodedText}`;
+
+            window.open(whatsappUrl, '_blank');
+            closeModal();
+            document.getElementById('consultForm').reset();
+        }
+
+        // Number counting animation
+        const counters = document.querySelectorAll('.count');
+
+        const animateCount = (counter) => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            let count = 0;
+            const increment = target / 50;
+
+            const update = () => {
+                count += increment;
+                if (count >= target) {
+                    counter.innerText = target;
+                } else {
+                    counter.innerText = count.toFixed(target % 1 !== 0 ? 1 : 0);
+                    requestAnimationFrame(update);
+                }
+            };
+
+            update();
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+</body>
+</html>
